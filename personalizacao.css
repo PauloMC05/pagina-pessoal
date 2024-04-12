@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #009929;
+}
+.inicio {
+    background: black;
+    background-blend-mode: darken;
+    padding: 0 10%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.inicio-content {
+    max-width: 700px;
+
+}
+.inicio-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.inicio-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #009929;
+}
+.inicio-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.inicio-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #009929;
+    border: 2px solid #006414;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 40px 0 40px;
+}
+.btn-box a:hover {
+    color: #009929;
+}
+.btn-box a:nth-child(2):hover {
+    color: black;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #009929;
+}
+.btn-box a:nth-child(2)::before {
+    background: #009929;
+}
+.btn-box a::before {
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: black;
+}
+.btn-box a:hover::before {
+    width: 100%;
+
+}
+.inicio-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.inicio-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid #009929;
+    border-radius: 40%;
+    font-size: 20px;
+    color: #009929;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.inicio-sci a:hover {
+    color: black;
+}
+.inicio-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #009929;
+    z-index: -1;
+    transition: .5s;
+}
+.inicio-sci a:hover::before {
+    width: 100%;
+}
+.inicio-img {
+    position: absolute;
+    top: 100;
+    right: 190px;
+    width: 500px;
+    height: 70%;
+    background: url(paulo.jpeg) no-repeat;
+    background-size: cover;
+    border-radius: 40%;
+    opacity: 70%;
+}
